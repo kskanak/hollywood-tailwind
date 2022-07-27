@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hollywood Movies with tailwind</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="images/icons/favicon.jpg"
+      type="image/x-icon"
+    />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              yellow: "#fecc02",
+              gray: "#4e4e4e",
+            },
+            fontFamily: {
+              bebas: ["Bebas Neue", "cursive"],
+              montserrat: ["Montserrat", "sans-serif"],
+            },
+            backgroundImage: {
+              banner: "url('images/banner.jpg')",
+              fbanner: "url('images/footer-bg.jpg')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="border border-red-200">
+      <nav class="sm:flex items-center justify-between sm:px-20 lg:px-32">
+        <div class="logo flex justify-center">
+          <img src="images/icons/logo.jpg" alt="logo" />
+        </div>
+        <ul class="flex gap-8 font-bebas uppercase justify-center">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Movies</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+      <!-- banner start -->
+      <section class="bg-banner bg-cover h-screen flex items-center">
+        <!-- banner content -->
+        <div class="banner-content font-bebas text-white pl-16">
+          <p class="text-lg">Movie production studio</p>
+          <h1 class="text-7xl">Films MAde to</h1>
+          <h1 class="text-yellow text-7xl">Perfection</h1>
+          <p class="font-montserrat mt-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, <br />
+            luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <div class="discover-more-btn">
+            <button
+              class="px-5 py-2 border-2 rounded-md text-lg mt-3 hover:bg-yellow hover:text-slate-900 hover:border-transparent transition"
+            >
+              Discover more
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- banner end -->
+      <!-- about us start -->
+      <section class="about-us-container border-2 m-12 lg:m-20 p-6">
+        <div class="about-us-top lg:h-screen grid lg:grid-cols-2 gap-12">
+          <div class="about-us-image">
+            <img
+              src="images/camera-man.jpg"
+              alt="camera man"
+              class="lg:h-4/5"
+            />
+            <!-- exp -->
+            <!-- <div
+              class="experience-part uppercase font-bebas flex justify-center"
+            >
+              <h2
+                class="px-24 py-2 text-3xl shadow rounded-lg bg-white border -mt-6"
+              >
+                23 Years of experience
+              </h2>
+            </div> -->
+            <!-- exp -->
+          </div>
+          <div class="about-us-content font-bebas space-y-4">
+            <h3 class="text-lg">ABOUT US</h3>
+            <h1 class="text-5xl md:text-6xl">
+              FIlming Experience <br />
+              Just Got better
+            </h1>
+            <p class="font-montserrat text-sm">
+              Primis lobortis adipiscing imperdiet dis ultricies. Id commodo
+              interdum fermentum pede dictumst ipsum. Erat sapien phasellus
+              suspendisse natoque nulla leo ornare mi. Pretium rhoncus venenatis
+              ante dignissim aliquet faucibus tempus etiam feugiat.
+            </p>
+            <button
+              class="px-5 py-2 border-2 rounded-md text-lg mt-3 hover:bg-yellow hover:text-slate-900 hover:border-transparent transition"
+            >
+              Discover more
+            </button>
+          </div>
+        </div>
+        <!-- about us blog -->
+        <div
+          class="about-us-blog grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-20 lg:mt-0"
+        >
+          <div class="blog uppercase font-bebas border-t-4">
+            <h1 class="text-5xl mt-5">Our mission</h1>
+            <p class="font-montserrat text-xs mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+          </div>
+
+          <div class="blog uppercase font-bebas border-t-4">
+            <h1 class="text-5xl mt-5">Our vission</h1>
+            <p class="font-montserrat text-xs mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+          </div>
+
+          <div class="blog uppercase font-bebas border-t-4">
+            <h1 class="text-5xl mt-5">Our moto</h1>
+            <p class="font-montserrat text-xs mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- about us end -->
+      <!-- movie collection start -->
+      <section class="movie-section bg-slate-800">
+        <div class="movie-container pt-12 pb-32 m-12 lg:m-20">
+          <div
+            class="movie-section-top uppercase font-bebas text-white md:flex justify-between"
+          >
+            <div class="title">
+              <h3 class="text-lg">our movie</h3>
+              <h1 class="text-6xl pt-2">movie collection</h1>
+            </div>
+            <div class="top-btn mt-5">
+              <button
+                class="px-5 py-2 border-2 rounded-md text-lg mt-3 hover:bg-yellow hover:text-slate-900 hover:border-transparent transition"
+              >
+                see more movies
+              </button>
+            </div>
+          </div>
+          <!-- collection part-->
+          <div class="collection grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+            <div class="movie border-2 border-white p-4">
+              <img src="images/inception.jpg" alt="inception" class="w-full" />
+            </div>
+            <div class="movie border-2 border-white p-4">
+              <img
+                src="images/interstellar.jpg"
+                alt="interstellar"
+                class="w-full"
+              />
+            </div>
+            <div class="movie border-2 border-white p-4">
+              <img src="images/fractured.jpg" alt="fractured" class="w-full" />
+            </div>
+            <div class="movie border-2 border-white p-4">
+              <img src="images/tenet.jpg" alt="tenet" class="w-full" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- movie collection end -->
+      <!-- service section start -->
+      <section class="service-section m-12 lg:m-20">
+        <div class="service-title text-center font-bebas">
+          <h3 class="text-lg">services</h3>
+          <h1 class="text-5xl">what we offer</h1>
+        </div>
+        <!-- services-card -->
+        <div class="services grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
+          <!-- card -->
+          <div
+            class="service font-bebas flex flex-col items-center border-2 p-3 text-center"
+          >
+            <img src="images/icons/3d-glasss.png" alt="" />
+            <h3 class="text-xl my-3">3D MOVIES</h3>
+            <p class="font-montserrat">
+              Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+              dis eget.
+            </p>
+          </div>
+          <!-- card -->
+          <div
+            class="service font-bebas flex flex-col items-center border-2 p-3 text-center"
+          >
+            <img src="images/icons/camera.png" alt="" />
+            <h3 class="text-xl my-3">3D camera</h3>
+            <p class="font-montserrat">
+              Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+              dis eget.
+            </p>
+          </div>
+          <!-- card -->
+          <div
+            class="service font-bebas flex flex-col items-center border-2 p-3 text-center"
+          >
+            <img src="images/icons/count-down.png" alt="" />
+            <h3 class="text-xl my-3">countdown</h3>
+            <p class="font-montserrat">
+              Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+              dis eget.
+            </p>
+          </div>
+          <!-- card -->
+          <div
+            class="service font-bebas flex flex-col items-center border-2 p-3 text-center"
+          >
+            <img src="images/icons/cut-board.png" alt="" />
+            <h3 class="text-xl my-3">cut board</h3>
+            <p class="font-montserrat">
+              Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+              dis eget.
+            </p>
+          </div>
+          <!-- card -->
+          <div
+            class="service font-bebas flex flex-col items-center border-2 p-3 text-center"
+          >
+            <img src="images/icons/director-chair.png" alt="" />
+            <h3 class="text-xl my-3">director chair</h3>
+            <p class="font-montserrat">
+              Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+              dis eget.
+            </p>
+          </div>
+          <!-- card -->
+          <div
+            class="service font-bebas flex flex-col items-center border-2 p-3 text-center"
+          >
+            <img src="images/icons/film.png" alt="" />
+            <h3 class="text-xl my-3">3D film</h3>
+            <p class="font-montserrat">
+              Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+              dis eget.
+            </p>
+          </div>
+          <!-- card -->
+          <div
+            class="service font-bebas flex flex-col items-center border-2 p-3 text-center"
+          >
+            <img src="images/icons/rim.png" alt="" />
+            <h3 class="text-xl my-3">3D rim</h3>
+            <p class="font-montserrat">
+              Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+              dis eget.
+            </p>
+          </div>
+          <!-- card -->
+          <div
+            class="service font-bebas flex flex-col items-center border-2 p-3 text-center"
+          >
+            <img src="images/icons/theater.png" alt="" />
+            <h3 class="text-xl my-3">3D theater</h3>
+            <p class="font-montserrat">
+              Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+              dis eget.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- service section end -->
+      <!-- footer start -->
+      <footer
+        class="font-bebas bg-fbanner text-white text-center space-y-2 py-16"
+      >
+        <h1 class="text-7xl">Hollywood movies</h1>
+        <h3 class="text-lg">next level experience</h3>
+        <p class="font-montserrat">
+          Feugiat nibh litora semper proin nullam facilisi volutpat ex
+          ullamcorper.
+        </p>
+        <p class="font-montserrat text-xs pt-16">
+          Copyright © 2023 Hollywood Movies Production, All rights reserved.
+          Present
+        </p>
+      </footer>
+      <!-- footer end -->
+    </main>
+    <!-- main end -->
+  </body>
+</html>
