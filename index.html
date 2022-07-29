@@ -59,20 +59,20 @@
     <!-- main start -->
     <main>
       <!-- banner start -->
-      <section class="bg-banner bg-cover h-screen flex items-center">
+      <section class="bg-banner bg-cover h-1/2 sm:h-screen flex items-center">
         <!-- banner content -->
-        <div class="banner-content font-bebas text-white pl-16">
-          <p class="text-lg">Movie production studio</p>
-          <h1 class="text-7xl">Films MAde to</h1>
-          <h1 class="text-yellow text-7xl">Perfection</h1>
-          <p class="font-montserrat mt-3">
+        <div class="banner-content font-bebas text-white pl-16 py-4 sm:py-0">
+          <p class="sm:text-lg">Movie production studio</p>
+          <h1 class="text-5xl sm:text-7xl">Films MAde to</h1>
+          <h1 class="text-yellow text-5xl sm:text-7xl">Perfection</h1>
+          <p class="text-sm font-montserrat mt-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, <br />
+            tellus, <br class="hidden sm:block" />
             luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </p>
           <div class="discover-more-btn">
             <button
-              class="px-5 py-2 border-2 rounded-md text-lg mt-3 hover:bg-yellow hover:text-slate-900 hover:border-transparent transition"
+              class="px-2 sm:px-5 py-1 sm:py-2 border-2 rounded-md text-lg mt-3 hover:bg-yellow hover:text-slate-900 hover:border-transparent transition"
             >
               Discover more
             </button>
@@ -81,14 +81,10 @@
       </section>
       <!-- banner end -->
       <!-- about us start -->
-      <section class="about-us-container border-2 m-12 lg:m-20 p-6">
+      <section class="about-us-container border-2 m-12 lg:m-20 sm:p-6">
         <div class="about-us-top lg:h-screen grid lg:grid-cols-2 gap-12">
           <div class="about-us-image">
-            <img
-              src="images/camera-man.jpg"
-              alt="camera man"
-              class="lg:h-4/5"
-            />
+            <img src="images/camera-man.jpg" alt="camera man" />
             <!-- exp -->
             <!-- <div
               class="experience-part uppercase font-bebas flex justify-center"
@@ -101,7 +97,7 @@
             </div> -->
             <!-- exp -->
           </div>
-          <div class="about-us-content font-bebas space-y-4">
+          <div class="about-us-content font-bebas space-y-4 p-6">
             <h3 class="text-lg">ABOUT US</h3>
             <h1 class="text-5xl md:text-6xl">
               FIlming Experience <br />
@@ -122,7 +118,7 @@
         </div>
         <!-- about us blog -->
         <div
-          class="about-us-blog grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-20 lg:mt-0"
+          class="about-us-blog grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-20 lg:mt-0 p-6"
         >
           <div class="blog uppercase font-bebas border-t-4">
             <h1 class="text-5xl mt-5">Our mission</h1>
