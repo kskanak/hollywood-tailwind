@@ -48,10 +48,10 @@
           <img src="images/icons/logo.jpg" alt="logo" />
         </div>
         <ul class="flex gap-8 font-bebas uppercase justify-center">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Movies</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#index.html">Home</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#movies">Our Movies</a></li>
+          <li><a href="#services">Services</a></li>
         </ul>
       </nav>
     </header>
@@ -81,10 +81,17 @@
       </section>
       <!-- banner end -->
       <!-- about us start -->
-      <section class="about-us-container border-2 m-12 lg:m-20 sm:p-6">
-        <div class="about-us-top lg:h-screen grid lg:grid-cols-2 gap-12">
+      <section
+        id="about-us"
+        class="about-us-container border-2 m-12 lg:m-20 sm:p-6"
+      >
+        <div class="about-us-top grid lg:grid-cols-2 gap-12">
           <div class="about-us-image">
-            <img src="images/camera-man.jpg" alt="camera man" />
+            <img
+              src="images/camera-man.jpg"
+              alt="camera man"
+              class="h-full object-cover"
+            />
             <!-- exp -->
             <!-- <div
               class="experience-part uppercase font-bebas flex justify-center"
@@ -118,7 +125,7 @@
         </div>
         <!-- about us blog -->
         <div
-          class="about-us-blog grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-20 lg:mt-0 p-6"
+          class="about-us-blog grid lg:grid-cols-3 md:grid-cols-2 gap-8 pt-20 lg:mt-0 p-6"
         >
           <div class="blog uppercase font-bebas border-t-4">
             <h1 class="text-5xl mt-5">Our mission</h1>
@@ -147,7 +154,7 @@
       </section>
       <!-- about us end -->
       <!-- movie collection start -->
-      <section class="movie-section bg-slate-800">
+      <section id="our-movies" class="movie-section bg-slate-800">
         <div class="movie-container pt-12 pb-32 m-12 lg:m-20">
           <div
             class="movie-section-top uppercase font-bebas text-white md:flex justify-between"
@@ -187,7 +194,7 @@
       </section>
       <!-- movie collection end -->
       <!-- service section start -->
-      <section class="service-section m-12 lg:m-20">
+      <section id="services" class="service-section m-12 lg:m-20">
         <div class="service-title text-center font-bebas">
           <h3 class="text-lg">services</h3>
           <h1 class="text-5xl">what we offer</h1>
